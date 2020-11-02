@@ -272,4 +272,40 @@ if ( function_exists( 'add_theme_support' ) ) {
 add_action('init', 'add_Main_Nav');
 
 
+
+function sitepoint_customize_register($wp_customize) 
+{
+	$wp_customize->add_section("ads", array(
+		"title" => __("Advertising", "customizer_ads_sections"),
+		"priority" => 30,
+    ));
+    
+    $wp_customize->add_setting("ads_code", array(
+		"default" => "",
+		"transport" => "postMessage",
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"ads_code",
+		array(
+			"label" => __("Enter Ads Code", "customizer_ads_code_label"),
+			"section" => "ads",
+			"settings" => "ads_code",
+			"type" => "textarea",
+		)
+    ));
+    
+}
+
+add_action("customize_register","sitepoint_customize_register");
+
+function sitepoint_customizer_live_preview()
+{
+	wp_enqueue_script("sitepoint-themecustomizer", get_template_directory_uri() . "/theme-customizer.js", array("jquery", "customize-preview"), '',  true);
+}
+
+add_action("customize_preview_init", "sitepoint_customizer_live_preview");
+
+
 ?>

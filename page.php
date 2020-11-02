@@ -3,6 +3,14 @@
 <div class="container-fluid">
 	<div class="row">
 
+
+
+
+
+
+
+
+
 		<div class="col-sm-12">
 		<div id="accroche">
 			<?php
@@ -13,6 +21,16 @@
 			}
 			?>
 		</div>
+
+
+		<div id="ads_box">
+		<?php
+			echo get_theme_mod("ads_code");
+		?>
+	</div>
+
+
+	
 		</div>
 	</div>
 
