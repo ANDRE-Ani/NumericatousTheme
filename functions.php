@@ -2,8 +2,10 @@
 
 require get_template_directory().'/options/themeoptions.php';
 
+
 // ne pas montrer la version de Wordpress
 remove_action('wp_head', 'wp_generator');
+
 
 // lien lire plus après les articles
 function new_excerpt_more($more) {
@@ -11,7 +13,6 @@ function new_excerpt_more($more) {
 	return '<p><a class="lirePlus moretag" href="'. get_permalink($post->ID) . '"> Lire la suite </a></p>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
-
 
 
 // Add scripts and stylesheets
@@ -46,52 +47,6 @@ add_theme_support('title-tag');
 // widgets
 function add_widget_Support()
 {
-
-    register_sidebar(array(
-        'name' => 'Sidebar-header-1',
-        'id' => 'sidebar-header-1',
-        'before_widget' => '<div class="widgetsB">',
-        'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fas fa-info-circle"></i> - ',
-        'after_title' => '</h5><hr>',
-    ));
-
-    register_sidebar(array(
-        'name' => 'Sidebar-header-2',
-        'id' => 'sidebar-header-2',
-        'before_widget' => '<div class="widgetsB">',
-        'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fas fa-info-circle"></i> - ',
-        'after_title' => '</h5><hr>',
-    ));
-
-    register_sidebar(array(
-        'name' => 'Sidebar-header-3',
-        'id' => 'sidebar-header-3',
-        'before_widget' => '<div class="widgetsB">',
-        'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fas fa-info-circle"></i> - ',
-        'after_title' => '</h5><hr>',
-    ));
-
-    register_sidebar(array(
-        'name' => 'Sidebar-header-4',
-        'id' => 'sidebar-header-4',
-        'before_widget' => '<div class="widgetsB">',
-        'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fas fa-info-circle"></i> - ',
-        'after_title' => '</h5><hr>',
-    ));
-
-    register_sidebar(array(
-        'name' => 'Sidebar-header-5',
-        'id' => 'sidebar-header-5',
-        'before_widget' => '<div class="widgetsB">',
-        'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fas fa-info-circle"></i> - ',
-        'after_title' => '</h5><hr>',
-    ));
-
     register_sidebar(array(
         'name' => 'Sidebar-d1',
         'id' => 'sidebar-d1',
@@ -100,36 +55,6 @@ function add_widget_Support()
         'before_title' => '<h5>',
         'after_title' => '</h5><hr>',
     ));
-
-    register_sidebar(array(
-        'name' => 'Sidebar-h1',
-        'id' => 'sidebar-h1',
-        'before_widget' => '<div class="widgetsB">',
-        'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fab fa-linux"></i> - ',
-        'after_title' => '</h5><hr>',
-    ));
-
-
-    register_sidebar(array(
-        'name' => 'Sidebar-h2',
-        'id' => 'sidebar-h2',
-        'before_widget' => '<div class="widgetsB">',
-        'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fab fa-linux"></i> - ',
-        'after_title' => '</h5><hr>',
-    ));
-
-
-    register_sidebar(array(
-        'name' => 'Sidebar-h3',
-        'id' => 'sidebar-h3',
-        'before_widget' => '<div class="widgetsB">',
-        'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fab fa-linux"></i> - ',
-        'after_title' => '</h5><hr>',
-    ));
-
 
     register_sidebar(array(
         'name' => 'Sidebar-footer-1',
@@ -184,14 +109,18 @@ register_nav_menus($locations);
 // enable WP automatic feed links
 add_theme_support( 'automatic-feed-links' );
 
+
 // title tag
 add_theme_support( 'title-tag' );
+
 
 // post thumbnails
 add_theme_support( 'post-thumbnails' );
 
+
 // post-format
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'chat', 'image', 'link', 'quote', 'video', 'audio'));
+
 
 // support HTML5
 add_theme_support( 'html5', array(
@@ -203,6 +132,7 @@ add_theme_support( 'html5', array(
 			) );
 
 add_theme_support( 'customize-selective-refresh-widgets' );
+
 
 // add logo
 add_theme_support( 'custom-logo', array(
@@ -272,26 +202,26 @@ if ( function_exists( 'add_theme_support' ) ) {
 add_action('init', 'add_Main_Nav');
 
 
-
+// section accroche
 function sitepoint_customize_register($wp_customize) 
 {
-	$wp_customize->add_section("ads", array(
-		"title" => __("Advertising", "customizer_ads_sections"),
+	$wp_customize->add_section("acc", array(
+		"title" => __("Section accroche", "customizer_acc_sections"),
 		"priority" => 30,
     ));
     
-    $wp_customize->add_setting("ads_code", array(
+    $wp_customize->add_setting("acc_code", array(
 		"default" => "",
 		"transport" => "postMessage",
     ));
     
     $wp_customize->add_control(new WP_Customize_Control(
 		$wp_customize,
-		"ads_code",
+		"acc_code",
 		array(
-			"label" => __("Enter Ads Code", "customizer_ads_code_label"),
-			"section" => "ads",
-			"settings" => "ads_code",
+			"label" => __("Entrez votre texte", "customizer_acc_code_label"),
+			"section" => "acc",
+			"settings" => "acc_code",
 			"type" => "textarea",
 		)
     ));
@@ -307,5 +237,150 @@ function sitepoint_customizer_live_preview()
 
 add_action("customize_preview_init", "sitepoint_customizer_live_preview");
 
+
+// section head1
+function head1_customize_register($wp_customize) 
+{
+	$wp_customize->add_section("head1", array(
+		"title" => __("Section head1", "customizer_head1_sections"),
+		"priority" => 30,
+    ));
+    
+    $wp_customize->add_setting("head1_code", array(
+		"default" => "",
+		"transport" => "postMessage",
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"head1_code",
+		array(
+			"label" => __("Entrez votre texte", "customizer_head1_code_label"),
+			"section" => "head1",
+			"settings" => "head1_code",
+			"type" => "textarea",
+		)
+    ));
+    
+}
+
+add_action("customize_register","head1_customize_register");
+
+function head1_customizer_live_preview()
+{
+	wp_enqueue_script("head1-themecustomizer", get_template_directory_uri() . "/theme-customizer.js", array("jquery", "customize-preview"), '',  true);
+}
+
+add_action("customize_preview_init", "head1_customizer_live_preview");
+
+
+// section head2
+function head2_customize_register($wp_customize) 
+{
+	$wp_customize->add_section("head2", array(
+		"title" => __("Section head2", "customizer_head2_sections"),
+		"priority" => 30,
+    ));
+    
+    $wp_customize->add_setting("head2_code", array(
+		"default" => "",
+		"transport" => "postMessage",
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"head2_code",
+		array(
+			"label" => __("Entrez votre texte", "customizer_head2_code_label"),
+			"section" => "head2",
+			"settings" => "head2_code",
+			"type" => "textarea",
+		)
+    ));
+    
+}
+
+add_action("customize_register","head2_customize_register");
+
+function head2_customizer_live_preview()
+{
+	wp_enqueue_script("head2-themecustomizer", get_template_directory_uri() . "/theme-customizer.js", array("jquery", "customize-preview"), '',  true);
+}
+
+add_action("customize_preview_init", "head2_customizer_live_preview");
+
+
+
+// section head3
+function head3_customize_register($wp_customize) 
+{
+	$wp_customize->add_section("head3", array(
+		"title" => __("Section head3", "customizer_head3_sections"),
+		"priority" => 30,
+    ));
+    
+    $wp_customize->add_setting("head3_code", array(
+		"default" => "",
+		"transport" => "postMessage",
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"head3_code",
+		array(
+			"label" => __("Entrez votre texte", "customizer_head3_code_label"),
+			"section" => "head3",
+			"settings" => "head3_code",
+			"type" => "textarea",
+		)
+    ));
+    
+}
+
+add_action("customize_register","head3_customize_register");
+
+function head3_customizer_live_preview()
+{
+	wp_enqueue_script("head3-themecustomizer", get_template_directory_uri() . "/theme-customizer.js", array("jquery", "customize-preview"), '',  true);
+}
+
+add_action("customize_preview_init", "head3_customizer_live_preview");
+
+
+
+// section recommandations
+function reco_customize_register($wp_customize) 
+{
+	$wp_customize->add_section("reco", array(
+		"title" => __("Section recommandation", "customizer_reco_sections"),
+		"priority" => 30,
+    ));
+    
+    $wp_customize->add_setting("reco_code", array(
+		"default" => "",
+		"transport" => "postMessage",
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"reco_code",
+		array(
+			"label" => __("Entrez votre texte", "customizer_reco_code_label"),
+			"section" => "reco",
+			"settings" => "reco_code",
+			"type" => "textarea",
+		)
+    ));
+    
+}
+
+add_action("customize_register","reco_customize_register");
+
+function reco_customizer_live_preview()
+{
+	wp_enqueue_script("reco-themecustomizer", get_template_directory_uri() . "/theme-customizer.js", array("jquery", "customize-preview"), '',  true);
+}
+
+add_action("customize_preview_init", "reco_customizer_live_preview");
 
 ?>

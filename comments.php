@@ -6,6 +6,7 @@
     }
     ?>
     <div id="comments" class="comments-area">
+
         <?php if (have_comments()) : ?>
             <h3 class="comments-title">
                 <?php
@@ -33,11 +34,11 @@
             'fields' => apply_filters(
                     'comment_form_default_fields', array(
                 'author' => '<div class="row"><div class="col-lg-4 col-md-4"><p class="comment-form-author">' . '<input class="form-control" id="author" placeholder="Votre nom" name="author" type="text" value="' .
-                esc_attr($commenter['comment_author']) . '" size="30"' . $aria_req . ' />' .
+                esc_attr($commenter['comment_author']) . '" size="30"' . isset($aria_req) . ' />' .
                 '</p></div>'
                 ,
                 'email' => '<div class="col-lg-4 col-md-4"><p class="comment-form-email">' . '<input class="form-control" id="email" placeholder="Votre email" name="email" type="text" value="' . esc_attr($commenter['comment_author_email']) .
-                '" size="30"' . $aria_req . ' />' .
+                '" size="30"' . isset($aria_req) . ' />' .
                 '</p></div>',
                 'url' => '<div class="col-lg-4 col-md-4"><p class="comment-form-url">' .
                 '<input class="form-control" id="url" name="url" placeholder="URL de votre site" type="text" value="' . esc_attr($commenter['comment_author_url']) . '" size="30" /> ' .

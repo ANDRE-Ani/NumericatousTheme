@@ -2,9 +2,6 @@
 <div class="container">
     <div class="row">
 
-        <!-- include block with widgets -->
-        <?php get_template_part('inc/projet'); ?>
-
         <div class="col-sm-8 blog-main">
 
 

@@ -4,74 +4,58 @@
 	<div class="row">
 
 
-
-
-
-
-
-
-
 		<div class="col-sm-12">
-		<div id="accroche">
-			<?php
-			if (is_front_page()) {
-				if (is_active_sidebar('sidebar-header-4')) {
-					dynamic_sidebar('sidebar-header-4');
-				}
-			}
-			?>
+
+			<div id="acc_box">
+				<div class="widgetsB">
+					<?php
+					echo get_theme_mod("acc_code");
+					?>
+				</div>
+			</div>
+
 		</div>
 
-
-		<div id="ads_box">
-		<?php
-			echo get_theme_mod("ads_code");
-		?>
-	</div>
-
-
-	
-		</div>
 	</div>
 
 
 	<div class="row">
 
 		<div class="col-sm-4">
-			<?php
-			if (is_front_page()) {
-				if (is_active_sidebar('sidebar-header-1')) {
-					dynamic_sidebar('sidebar-header-1');
-				}
-			}
-			?>
+			<div id="head1_box">
+				<div class="widgetsB">
+					<?php
+					echo get_theme_mod("head1_code");
+					?>
+				</div>
+			</div>
 		</div>
 
 		<div class="col-sm-4">
-			<?php
-			if (is_front_page()) {
-				if (is_active_sidebar('sidebar-header-2')) {
-					dynamic_sidebar('sidebar-header-2');
-				}
-			}
-			?>
+			<div id="head2_box">
+				<div class="widgetsB">
+					<?php
+					echo get_theme_mod("head2_code");
+					?>
+				</div>
+			</div>
 		</div>
 
 
 		<div class="col-sm-4">
-			<?php
-			if (is_front_page()) {
-				if (is_active_sidebar('sidebar-header-3')) {
-					dynamic_sidebar('sidebar-header-3');
-				}
-			}
-			?>
+			<div id="head3_box">
+				<div class="widgetsB">
+					<?php
+					echo get_theme_mod("head3_code");
+					?>
+				</div>
+			</div>
 		</div>
 
 	</div>
 
 
-
+<!-- affichage des articles -->
 	<div class="row">
 		<div class="col-sm-12 page">
 
@@ -87,20 +71,21 @@
 
 
 
-
+<!-- recommandations -->
 	<div class="row">
 		<div class="col-sm-12">
-			<?php
-			if (is_front_page()) {
-				get_template_part('inc/present');
-			}
-			?>
+
+			<div id="reco_box">
+				<div class="widgetsB">
+					<?php
+					echo get_theme_mod("reco_code");
+					?>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </div>
-
-
-
 
 
 <?php get_footer(); ?>
