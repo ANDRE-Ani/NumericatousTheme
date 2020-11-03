@@ -1,3 +1,21 @@
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(../fonts/Ubuntu-Light.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url(../fonts/Ubuntu-bold.ttf);
+    font-weight: normal;
+}
+
 .hebergeur {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -40,7 +58,7 @@
 }
 
 body {
-    font-family: 'Ubuntu', Georgia, "Times New Roman", Times, serif;
+    font-family: 'Ubuntu-Regular', Georgia, "Times New Roman", Times, serif;
     color: #626262;
 }
 
