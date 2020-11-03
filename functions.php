@@ -31,24 +31,6 @@ function style_scripts() {
   add_action( 'wp_enqueue_scripts', 'style_scripts');
 
 
-
-// add fontawesome
-add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
-function enqueue_load_fa() {
-    wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css' );
- 
-}
-
-
-// Add Google Fonts
-/* function style_google_fonts()
-{
-    wp_register_style('Ubuntu', 'https://fonts.googleapis.com/css?family=Ubuntu');
-    wp_enqueue_style('Ubuntu');
-}
-add_action('wp_print_styles', 'style_google_fonts'); */
-
-
 // WordPress Titles
 add_theme_support('title-tag');
 
@@ -70,7 +52,10 @@ function add_widget_Support()
         'id' => 'sidebar-footer-1',
         'before_widget' => '<div class="widgetsB">',
         'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fas fa-info-circle"></i> - ',
+        'before_title' => '<h5><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+            <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg> - ',
         'after_title' => '</h5><hr>',
     ));
 
@@ -79,7 +64,10 @@ function add_widget_Support()
         'id' => 'sidebar-footer-2',
         'before_widget' => '<div class="widgetsB">',
         'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fas fa-info-circle"></i> - ',
+        'before_title' => '<h5><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+            <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg> - ',
         'after_title' => '</h5><hr>',
     ));
 
@@ -88,7 +76,10 @@ function add_widget_Support()
         'id' => 'sidebar-footer-3',
         'before_widget' => '<div class="widgetsB">',
         'after_widget' => '</div>',
-        'before_title' => '<h5><i class="fas fa-info-circle"></i> - ',
+        'before_title' => '<h5><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+            <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg> - ',
         'after_title' => '</h5><hr>',
     ));
 }

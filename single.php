@@ -15,12 +15,12 @@
             endif;
             ?>
 
-        </div> <!-- /.col -->
+        </div>
 
         <div class="col-sm-4">
             <?php get_sidebar(); ?>
         </div>
 
-    </div> <!-- /.row -->
+    </div>
 </div>
 <?php get_footer(); ?>
