@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
 
         <div class="col-sm-8 blog-main">
@@ -18,13 +18,13 @@
                 Revenez donc à l'<a href='https://andre-ani.fr' title='Page d\'accueil du Site d\'ANDRE Ani'> accueil</a> ;-)
             </p>
 
-        </div> <!-- /.blog-main -->
+        </div>
 
         <div class="col-sm-4">
             <?php get_sidebar(); ?>
         </div>
 
-    </div> <!-- /.row -->
+    </div>
 </div>
 
 <?php get_footer(); ?>

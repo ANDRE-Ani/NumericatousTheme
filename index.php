@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
+<div class="container-fluid">
     <div class="row">
 
         <div class="col-sm-8 blog-main">
@@ -9,9 +9,9 @@
             if (have_posts()) : while (have_posts()) : the_post();
 
                     get_template_part('content', get_post_format());
-                    ?>
+            ?>
 
-    <?php endwhile; ?>
+                <?php endwhile; ?>
 
                 <div class="nav-previous alignleft"><?php previous_posts_link('Précédent'); ?></div>
                 <div class="nav-next alignright"><?php next_posts_link('Suivant'); ?></div>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="col-sm-4">
-<?php get_sidebar(); ?>
+            <?php get_sidebar(); ?>
         </div>
 
     </div>

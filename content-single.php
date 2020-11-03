@@ -17,4 +17,4 @@
         <p class="blog-post-meta">Dans : <?php the_category(', '); ?>
             <?php the_content(); ?>
     </div>
-</div><!-- /.blog-post -->
+</div>

@@ -179,13 +179,13 @@ function fil_ariane() {
             $fil .= get_bloginfo('name');
             $fil .= '</a> > ';
 
-    $parents = array_reverse(get_ancestors($post->ID,'page'));
+    $parents = array_reverse(get_ancestors(isset($post->ID),'page'));
     foreach($parents as $parents) {
         $fil.='<a href="'.get_permalink($parent).'">';
         $fil.= get_the_title($parent);
         $fil.= '</a> >';
     }
-    $fil.= $post->post_title;
+    $fil.= isset($post->post_title);
         }
         return $fil;
 }
