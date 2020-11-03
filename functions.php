@@ -1,8 +1,5 @@
 <?php
 
-require get_template_directory().'/options/themeoptions.php';
-
-
 // ne pas montrer la version de Wordpress
 remove_action('wp_head', 'wp_generator');
 
@@ -15,12 +12,32 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 
-// Add scripts and stylesheets
-function style_scripts()
-{
-   wp_enqueue_style('blog', get_template_directory_uri() . '/css/blog.css');
-   }
-add_action('wp_enqueue_scripts', 'style_scripts');
+// Add scripts, stylesheets and bootstrap
+function style_enqueue_scripts() {
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.5.1.min.js' );
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js' );
+    wp_enqueue_script( 'bootstrap-bundle', get_template_directory_uri() . '/bootstrap/js/bootstrap.bundle.js' );
+    wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array('jquery'), 1, true);
+  }
+  add_action( 'wp_enqueue_scripts', 'style_enqueue_scripts');
+
+
+
+function style_scripts() {
+
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.css' );
+    wp_enqueue_style( 'bootstrap-grid', get_template_directory_uri() . '/bootstrap/css/bootstrap-grid.css' );
+    wp_enqueue_style( 'site', get_template_directory_uri() . '/css/site.css' );
+  
+  }
+  add_action( 'wp_enqueue_scripts', 'style_scripts');
+
+
+
+
+
+
+
 
 
 // add fontawesome
