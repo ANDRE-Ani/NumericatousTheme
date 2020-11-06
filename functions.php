@@ -93,17 +93,12 @@ function add_Main_Nav()
 {
     register_nav_menus(
         array(
-            'menu-haut' => __('Menu haut'),
+            'menu-titre' => __('Menu titre'),
         )
     );
 }
 
 
-// Menus
-$locations = array(
-    'menu-haut' => 'Barre de menu supérieure',
-);
-register_nav_menus($locations);
 
 
 // enable WP automatic feed links
@@ -133,15 +128,29 @@ add_theme_support( 'html5', array(
 
 add_theme_support( 'customize-selective-refresh-widgets' );
 
+// color
+add_theme_support( 'editor-color-palette',
+    array(
+		array( 'name' => 'blue', 'slug'  => 'blue', 'color' => '#48ADD8' ),
+		array( 'name' => 'pink', 'slug'  => 'pink', 'color' => '#FF2952' ),
+		array( 'name' => 'green', 'slug'  => 'green', 'color' => '#83BD71' ),
+	)
+);
+
 
 // add logo
-add_theme_support( 'custom-logo', array(
-	'height'      => 100,
-	'width'       => 400,
-	'flex-height' => true,
-	'flex-width'  => true,
-	'header-text' => array( 'site-title', 'site-description' ),
-) );
+function numerica_custom_logo_setup() {
+  $defaults = array(
+  'height'      => 100,
+  'width'       => 400,
+  'flex-height' => true,
+  'flex-width'  => true,
+  'header-text' => array( 'site-title', 'site-description' ),
+ 'unlink-homepage-logo' => true, 
+  );
+  add_theme_support( 'custom-logo', $defaults );
+ }
+ add_action( 'after_setup_theme', 'numerica_custom_logo_setup' );
 
 
 // background
@@ -170,32 +179,16 @@ add_post_type_support( 'page', 'excerpt' );
 add_theme_support( 'editor-styles' );
 
 
-// breadcrumb
-function fil_ariane() {
-    global $post;
-        if (!is_home()) {
-            $fil = 'Vous êtes ici : ';
-            $fil .= '<a href="'.get_bloginfo('wpurl').'">';
-            $fil .= get_bloginfo('name');
-            $fil .= '</a> > ';
-
-    $parents = array_reverse(get_ancestors(isset($post->ID),'page'));
-    foreach($parents as $parents) {
-        $fil.='<a href="'.get_permalink($parent).'">';
-        $fil.= get_the_title($parent);
-        $fil.= '</a> >';
-    }
-    $fil.= isset($post->post_title);
-        }
-        return $fil;
-}
-
-
 // Thumbnails
 if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
-    set_post_thumbnail_size( 150, 150, TRUE );
+    add_theme_support( 'post-thumbnails', array( 'post' ) );
+    add_theme_support( 'post-thumbnails', array( 'page' ) );
+    set_post_thumbnail_size( 350, 350, TRUE );
 }
+    
+    
+    
 
 
 // Hook to the init action hook, run our navigation menu function

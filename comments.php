@@ -1,4 +1,4 @@
-<div class="comments">
+<div class="comments1">
 
     <?php
     if (post_password_required()) {

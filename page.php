@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
 <div class="container-fluid">
+
+<?php if ( is_front_page() ) { ?>
 	<div class="row">
 
 		<div class="col-sm-12">
@@ -12,12 +14,13 @@
 					?>
 				</div>
 			</div>
-
+		
 		</div>
 
 	</div>
+	<?php } ?>
 
-
+	<?php if ( is_front_page() ) { ?>
 	<div class="row">
 
 		<div class="col-sm-4">
@@ -52,7 +55,7 @@
 		</div>
 
 	</div>
-
+	<?php } ?>
 
 <!-- affichage des articles -->
 	<div class="row">
@@ -71,6 +74,7 @@
 
 
 <!-- recommandations -->
+<?php if ( is_front_page() ) { ?>
 	<div class="row">
 		<div class="col-sm-12">
 
@@ -84,6 +88,7 @@
 
 		</div>
 	</div>
+	<?php } ?>
 </div>
 
 
