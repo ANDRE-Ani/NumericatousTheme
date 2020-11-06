@@ -1,2 +1,6 @@
 Thème WordPress simple et léger.
-Utilisation de Bootstrap.
+
+
+Bootstrap et Bootstrap icons.
+
+Pas de CDN, ni Google Fonts.
