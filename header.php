@@ -16,12 +16,12 @@
 
     <div class="container-fluid">
 
-        <!-- title and slogan -->
+        <!-- titre et slogan -->
         <div class="row">
             <div class="col-sm-4">
                 <div class="blog-header">
                     <h1 class="blog-title"><a href="<?php echo get_bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
-                    <p class="lead blog-description"><?php echo get_bloginfo('description'); ?></p>
+                    <h2 class="lead blog-description slogan"><?php echo get_bloginfo('description'); ?></h2>
                 </div>
             </div>
 
@@ -29,7 +29,7 @@
             <div class="col-sm-8 menu-nav">
                 <div id="navmenu">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a class="navbar-brand" href="<?php echo site_url(); ?>">
+                        <a class="navbar-brand" title="accueil" href="<?php echo site_url(); ?>">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>

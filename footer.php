@@ -44,7 +44,7 @@
                     <p class="textF">Fièrement propulsé par <a href="https://fr.wordpress.org/" target="_blank" title="Site de Wordpress">Wordpress</a>
                     </p>
 
-                    <p>&#x1f12f -
+                    <p>&#x1f12f; -
                         <?php echo date('Y'); ?>
                         - Thème : <a href="https://gitlab.com/andre0ani/andreaniswptheme" target="_blank" title="Dépôt Gitlab"><?php
                                                                                                                                 $my_theme = wp_get_theme();

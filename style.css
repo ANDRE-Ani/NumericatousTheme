@@ -8,3 +8,298 @@ Text Domain: numerica
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
+
+@font-face {
+    font-family: Ubuntu-Regular;
+    src: url(./fonts/Ubuntu-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(../fonts/Ubuntu-Light.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url(../fonts/Ubuntu-bold.ttf);
+    font-weight: normal;
+}
+
+#adminmenuwrap {
+    margin-top: 0px;
+}
+
+#adminmenuback {
+    margin-top: 0px;
+}
+
+.menu-nav {
+    margin-top: 40px;
+}
+
+.footer-text {
+    text-align: left;
+}
+
+#accroche .widget_text {
+    background-color: #1ccdca;
+    border: none;
+    color: white;
+}
+
+@media print {
+    body {
+        margin: 0;
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+body {
+    font-family: 'Ubuntu-Regular', Georgia, "Times New Roman", Times, serif;
+    color: #626262;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    margin-top: 0;
+    font-family: 'Ubuntu', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+}
+
+i {
+    color: #d54118;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+h5 {
+    color: #3d3d3d;
+}
+
+.blog-post-meta a {
+    color: #d54118;
+}
+
+hr {
+    background-color: #f2a438;
+}
+
+.comments1 {
+    background-color: #f3f3f3;
+    margin: 15px;
+    padding: 15px;
+}
+
+#error {
+    background-color: #c5cbff;
+    padding: 20px;
+    border-radius: 45px;
+    height: 210px;
+    margin-top: 15px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+.blog-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+.blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.blog-title a {
+    color: #d54118;
+}
+
+.blog-description {
+    font-size: 20px;
+    color: #999;
+}
+
+#navmenu {
+    top: 0;
+    margin: 4px;
+    padding: 5px 20px 5px 20px;
+    color: #5875b2;
+    display: inline;
+}
+
+#navmenu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+#navmenu li {
+    display: inline;
+}
+
+#navmenu ul li a {
+    text-decoration: none;
+    margin: 4px;
+    padding: 5px 20px 5px 20px;
+    color: #f2a438;
+}
+
+#navmenu ul li a:hover {
+    background: grey;
+}
+
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.icon {
+    color: #d54118;
+}
+
+.service_box {
+    text-align: center;
+}
+
+.bouton6 {
+    border-radius: 12px 0 12px 0;
+    background: #d54118;
+    border: none;
+    color: #fff;
+    font: bold 12px;
+    padding: 6px 6px 6px 6px;
+}
+
+.presentationArt2 {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #f3f3f3;
+    border-bottom: 3px solid #f2a438;
+    border-left: 3px solid #f2a438;
+    border-right: 3px solid #f2a438;
+    border-style: inset;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+.presentationArt {
+    color: #626262;
+    background-color: #f3f3f3;
+    border-radius: 20px 0 20px 0;
+    border: 3px solid #5875b2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-style: inset;
+    text-align: left;
+    height: auto;
+}
+
+.presentationArt a {
+    color: #2d2d2d;
+}
+
+.lirePlus {
+    background-color: #f2a438;
+    color: #2d2d2d;
+    padding: 2px;
+}
+
+.widgetsB {
+    color: #626262;
+    background-color: #f3f3f3;
+    border-radius: 20px 0 20px 0;
+    border: 3px solid #5875b2;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-style: inset;
+    text-align: left;
+    height: auto;
+}
+
+.widgetsB h2 {
+    color: #626262;
+}
+
+.page {
+    margin: auto;
+}
+
+.couleur {
+    background-color: #f2a438;
+    padding: 10px;
+}
+
+.soutient {
+    padding: 10px;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.blog-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.blog-post-title a {
+    color: #5e5e5e;
+}
+
+.blog-post-meta {
+    margin-bottom: 20px;
+    color: #424242;
+    font-size: 0.8em;
+}
+
+.wp-block-latest-posts__post-date {
+    color: #424242;
+}
+
+.footer1 {
+    padding: 20px;
+    background-color: #131719;
+    color: #f2a438;
+}
+
+.footer2 {
+    background-color: #191e21;
+}
+
+.slogan {
+    color: #f2a438;
+}
+
+a {
+    color: #d54118;
+}

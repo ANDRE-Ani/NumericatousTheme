@@ -12,7 +12,7 @@ function new_excerpt_more($more) {
 add_filter('excerpt_more', 'new_excerpt_more');
 
 
-// Add scripts, stylesheets and bootstrap
+// scripts et CSS, bootstrap
 function style_enqueue_scripts() {
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.5.1.min.js' );
     wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js' );
@@ -25,13 +25,11 @@ function style_enqueue_scripts() {
 
 function style_scripts() {
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.css' );
-    wp_enqueue_style( 'bootstrap-grid', get_template_directory_uri() . '/bootstrap/css/bootstrap-grid.css' );
-    wp_enqueue_style( 'site', get_template_directory_uri() . '/css/site.css' );
+    wp_enqueue_style( 'site', get_template_directory_uri() . '/style.css' );
   }
   add_action( 'wp_enqueue_scripts', 'style_scripts');
 
 
-// WordPress Titles
 add_theme_support('title-tag');
 
 
@@ -84,11 +82,11 @@ function add_widget_Support()
     ));
 }
 
-// Hook the widget initiation and run our function
+
 add_action('widgets_init', 'add_Widget_Support');
 
 
-// Register a new navigation menu
+// menu
 function add_Main_Nav()
 {
     register_nav_menus(
@@ -99,25 +97,18 @@ function add_Main_Nav()
 }
 
 
-
-
-// enable WP automatic feed links
 add_theme_support( 'automatic-feed-links' );
 
 
-// title tag
 add_theme_support( 'title-tag' );
 
 
-// post thumbnails
 add_theme_support( 'post-thumbnails' );
 
 
-// post-format
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'chat', 'image', 'link', 'quote', 'video', 'audio'));
 
 
-// support HTML5
 add_theme_support( 'html5', array(
 				'search-form',
 				'comment-form',
@@ -128,7 +119,7 @@ add_theme_support( 'html5', array(
 
 add_theme_support( 'customize-selective-refresh-widgets' );
 
-// color
+
 add_theme_support( 'editor-color-palette',
     array(
 		array( 'name' => 'blue', 'slug'  => 'blue', 'color' => '#48ADD8' ),
@@ -138,7 +129,6 @@ add_theme_support( 'editor-color-palette',
 );
 
 
-// add logo
 function numerica_custom_logo_setup() {
   $defaults = array(
   'height'      => 100,
@@ -153,7 +143,7 @@ function numerica_custom_logo_setup() {
  add_action( 'after_setup_theme', 'numerica_custom_logo_setup' );
 
 
-// background
+
 $args = array(
     'default-color' => '000000',
     'default-image' => '',
@@ -161,7 +151,7 @@ $args = array(
 add_theme_support( 'custom-background', $args );
 
 
-// header
+
 $args = array(
     'default-image' => '',
     'default-text-color' => '',
@@ -179,19 +169,15 @@ add_post_type_support( 'page', 'excerpt' );
 add_theme_support( 'editor-styles' );
 
 
-// Thumbnails
+// images et taille
 if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'post-thumbnails', array( 'post' ) );
     add_theme_support( 'post-thumbnails', array( 'page' ) );
-    set_post_thumbnail_size( 350, 350, TRUE );
+    set_post_thumbnail_size( 600, 350, TRUE );
 }
     
-    
-    
 
-
-// Hook to the init action hook, run our navigation menu function
 add_action('init', 'add_Main_Nav');
 
 
