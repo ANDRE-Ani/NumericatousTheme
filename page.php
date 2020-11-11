@@ -4,18 +4,20 @@
 
 <?php if ( is_front_page() ) { ?>
 	<div class="row">
-
+	
 		<div class="col-sm-12">
-
-			<div id="acc_box">
+		<div class="blog-post">
+			
 				<div class="widgetsB">
 					<?php
 					echo get_theme_mod("acc_code");
 					?>
 				</div>
-			</div>
+			
 		
 		</div>
+		</div>
+
 
 	</div>
 	<?php } ?>
@@ -23,39 +25,37 @@
 	<?php if ( is_front_page() ) { ?>
 	<div class="row">
 
-		<div class="col-sm-4">
-			<div id="head1_box">
+		<div class="col-sm marge_acc">
 				<div class="widgetsB">
 					<?php
 					echo get_theme_mod("head1_code");
 					?>
-				</div>
 			</div>
 		</div>
 
-		<div class="col-sm-4">
-			<div id="head2_box">
+		
+
+		<div class="col-sm marge_acc">
 				<div class="widgetsB">
 					<?php
 					echo get_theme_mod("head2_code");
 					?>
-				</div>
 			</div>
 		</div>
+		
 
-
-		<div class="col-sm-4">
-			<div id="head3_box">
+		<div class="col-sm marge_acc">
 				<div class="widgetsB">
 					<?php
 					echo get_theme_mod("head3_code");
 					?>
 				</div>
-			</div>
 		</div>
 
 	</div>
 	<?php } ?>
+
+
 
 <!-- affichage des articles -->
 	<div class="row">
@@ -78,7 +78,7 @@
 	<div class="row">
 		<div class="col-sm-12">
 
-			<div id="reco_box">
+			<div class="blog-post">
 				<div class="widgetsB">
 					<?php
 					echo get_theme_mod("reco_code");

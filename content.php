@@ -29,7 +29,7 @@
     </a>
   </p>
 
-  <p><?php the_post_thumbnail(); ?></p>
+  <p><?php the_post_thumbnail('post-thumbnails'); ?></p>
   <p class="blog-post-meta"><?php the_excerpt(); ?></p>
 
 </div>

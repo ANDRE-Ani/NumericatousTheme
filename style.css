@@ -231,6 +231,11 @@ hr {
     padding: 2px;
 }
 
+.marge_acc {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .widgetsB {
     color: #626262;
     background-color: #f3f3f3;
@@ -262,7 +267,7 @@ hr {
 }
 
 .blog-post {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 10px;
 }
 

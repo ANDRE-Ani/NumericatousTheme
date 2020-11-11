@@ -18,7 +18,7 @@
 
         <!-- titre et slogan -->
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-4">
                 <div class="blog-header">
                     <h1 class="blog-title"><a href="<?php echo get_bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a></h1>
                     <h2 class="lead blog-description slogan"><?php echo get_bloginfo('description'); ?></h2>
@@ -26,7 +26,7 @@
             </div>
 
             <!-- menu -->
-            <div class="col-sm-8 menu-nav">
+            <div class="col-8 menu-nav">
                 <div id="navmenu">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                         <a class="navbar-brand" title="accueil" href="<?php echo site_url(); ?>">
@@ -54,7 +54,6 @@
                     </nav>
                 </div>
             </div>
-
 
         </div>
 
