@@ -106,10 +106,6 @@ h5 {
     color: #3d3d3d;
 }
 
-.blog-post-meta a {
-    color: #d54118;
-}
-
 hr {
     background-color: #f2a438;
 }
@@ -189,6 +185,8 @@ hr {
 .blog-main {
     font-size: 18px;
     line-height: 1.5;
+    padding-left: 25px;
+    padding-right: 5px;
 }
 
 .icon {
@@ -279,9 +277,16 @@ hr {
     padding: 10px;
 }
 
+.title-article {
+    font-weight: bold;
+    font-size: 1.3em;
+    padding-left: 20px;
+}
+
 .blog-post {
     margin-bottom: 10px;
-    padding: 10px;
+    padding-left: 25px;
+    padding-right: 5px;
 }
 
 .blog-post-title {
@@ -294,9 +299,13 @@ hr {
     color: #5e5e5e;
 }
 
+.blog-post-meta a {
+    color: #2c2c2c;
+}
+
 .blog-post-meta {
     margin-bottom: 20px;
-    color: #424242;
+    color: #2c2c2c;
     font-size: 0.8em;
 }
 

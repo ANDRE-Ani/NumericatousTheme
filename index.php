@@ -2,6 +2,7 @@
 <div class="container-fluid">
     <div class="row">
 
+    
         <div class="col-sm-8 blog-main">
 
 
@@ -19,6 +20,7 @@
             ?>
 
         </div>
+
 
         <div class="col-sm-4">
             <?php get_sidebar(); ?>
