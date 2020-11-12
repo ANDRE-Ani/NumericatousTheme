@@ -14,7 +14,27 @@
 
 <body>
 
+<div class="contact">
+			
+				
+					<?php
+					echo get_theme_mod("contact_code");
+					?>
+				
+		</div>
+                    
     <div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-sm-12 logo img-fluid">
+                <?php if (function_exists('the_custom_logo')) {
+                    the_custom_logo();
+                }
+                ?>
+            </div>
+        </div>
+
 
         <!-- titre et slogan -->
         <div class="row">

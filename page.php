@@ -13,14 +13,11 @@
 					echo get_theme_mod("acc_code");
 					?>
 				</div>
-			
-		
 		</div>
 		</div>
-
-
 	</div>
 	<?php } ?>
+	
 
 	<?php if ( is_front_page() ) { ?>
 	<div class="row">

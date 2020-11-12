@@ -48,10 +48,9 @@ function add_widget_Support()
         'id' => 'sidebar-footer-1',
         'before_widget' => '<div class="widgetsB">',
         'after_widget' => '</div>',
-        'before_title' => '<h5><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-            <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-          </svg> - ',
+        'before_title' => '<h5><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-square-fill icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg> - ',
         'after_title' => '</h5><hr>',
     ));
 
@@ -60,10 +59,9 @@ function add_widget_Support()
         'id' => 'sidebar-footer-2',
         'before_widget' => '<div class="widgetsB">',
         'after_widget' => '</div>',
-        'before_title' => '<h5><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-            <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-          </svg> - ',
+        'before_title' => '<h5><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-square-fill icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg> - ',
         'after_title' => '</h5><hr>',
     ));
 
@@ -72,10 +70,9 @@ function add_widget_Support()
         'id' => 'sidebar-footer-3',
         'before_widget' => '<div class="widgetsB">',
         'after_widget' => '</div>',
-        'before_title' => '<h5><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-            <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-          </svg> - ',
+        'before_title' => '<h5><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-square-fill icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.93 4.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+        </svg> - ',
         'after_title' => '</h5><hr>',
     ));
 }
@@ -130,7 +127,7 @@ add_theme_support( 'editor-color-palette',
 function numerica_custom_logo_setup() {
   $defaults = array(
   'height'      => 100,
-  'width'       => 400,
+  'width'       => 500,
   'flex-height' => true,
   'flex-width'  => true,
   'header-text' => array( 'site-title', 'site-description' ),
@@ -182,6 +179,44 @@ if ( function_exists( 'add_theme_support' ) ) {
 add_action('init', 'add_Main_Nav');
 
 
+// section contact
+function contact_customize_register($wp_customize) 
+{
+	$wp_customize->add_section("contact", array(
+		"title" => __("Section contact", "customizer_contact_sections"),
+		"priority" => 30,
+    ));
+    
+    $wp_customize->add_setting("contact_code", array(
+		"default" => "Contact",
+		"transport" => "postMessage",
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"contact_code",
+		array(
+			"label" => __("Entrez votre texte", "customizer_contact_code_label"),
+			"section" => "contact",
+			"settings" => "contact_code",
+			"type" => "textarea",
+		)
+    ));
+    
+}
+
+add_action("customize_register","contact_customize_register");
+
+function contact_customizer_live_preview()
+{
+	wp_enqueue_script("contact-themecustomizer", get_template_directory_uri() . "/theme-customizer.js", array("jquery", "customize-preview"), '',  true);
+}
+
+add_action("customize_preview_init", "contact_customizer_live_preview");
+
+
+
+
 // section accroche
 function sitepoint_customize_register($wp_customize) 
 {
@@ -191,7 +226,7 @@ function sitepoint_customize_register($wp_customize)
     ));
     
     $wp_customize->add_setting("acc_code", array(
-		"default" => "",
+		"default" => "accroche",
 		"transport" => "postMessage",
     ));
     
@@ -227,7 +262,7 @@ function head1_customize_register($wp_customize)
     ));
     
     $wp_customize->add_setting("head1_code", array(
-		"default" => "",
+		"default" => "header 1",
 		"transport" => "postMessage",
     ));
     
@@ -263,7 +298,7 @@ function head2_customize_register($wp_customize)
     ));
     
     $wp_customize->add_setting("head2_code", array(
-		"default" => "",
+		"default" => "header 2",
 		"transport" => "postMessage",
     ));
     
@@ -300,7 +335,7 @@ function head3_customize_register($wp_customize)
     ));
     
     $wp_customize->add_setting("head3_code", array(
-		"default" => "",
+		"default" => "header 3",
 		"transport" => "postMessage",
     ));
     
@@ -337,7 +372,7 @@ function reco_customize_register($wp_customize)
     ));
     
     $wp_customize->add_setting("reco_code", array(
-		"default" => "",
+		"default" => "Recommandations",
 		"transport" => "postMessage",
     ));
     

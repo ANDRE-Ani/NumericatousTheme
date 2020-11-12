@@ -27,6 +27,19 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
     font-weight: normal;
 }
 
+.contact {
+    width: 100%;
+    height: auto;
+    color: #d54118;
+    background-color: #131719;
+    padding: 10px;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
 #adminmenuwrap {
     margin-top: 0px;
 }
@@ -36,7 +49,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 }
 
 .menu-nav {
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .footer-text {
@@ -122,13 +135,13 @@ hr {
 }
 
 .blog-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-style: italic;
 }
 
 .blog-title {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 0;
     font-size: 50px;
     font-weight: normal;
@@ -267,13 +280,13 @@ hr {
 }
 
 .blog-post {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
 }
 
 .blog-post-title {
     margin-bottom: 5px;
-    font-size: 40px;
+    font-size: 35px;
     font-style: italic;
 }
 
