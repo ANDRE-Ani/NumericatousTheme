@@ -22,7 +22,7 @@
         </div>
 
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 side">
             <?php get_sidebar(); ?>
         </div>
 

@@ -15,6 +15,10 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
     font-weight: normal;
 }
 
+.side {
+    padding-right: 25px;
+}
+
 .contact {
     width: 100%;
     height: auto;
@@ -38,6 +42,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 .menu-nav {
     margin-top: 15px;
+    padding-right: 23px;
 }
 
 .footer-text {
@@ -50,16 +55,8 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
     color: white;
 }
 
-@media print {
-    body {
-        margin: 0;
-        color: #000;
-        background-color: #fff;
-    }
-}
-
 body {
-    font-family: 'Ubuntu-Regular', Georgia, "Times New Roman", Times, serif;
+    font-family: 'Ubuntu-Regular', "Times New Roman", Times, serif;
     color: #626262;
 }
 
@@ -76,7 +73,7 @@ h5,
 h6,
 .h6 {
     margin-top: 0;
-    font-family: 'Ubuntu', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
     font-weight: normal;
     color: #333;
 }
@@ -122,6 +119,7 @@ hr {
     padding-top: 10px;
     padding-bottom: 10px;
     font-style: italic;
+    margin-left: 10px;
 }
 
 .blog-title {
@@ -143,6 +141,7 @@ hr {
 #navmenu {
     top: 0;
     margin: 4px;
+    margin-right: 35px;
     padding: 5px 20px 5px 20px;
     color: #5875b2;
     display: inline;
@@ -163,11 +162,15 @@ hr {
     text-decoration: none;
     margin: 4px;
     padding: 5px 20px 5px 20px;
-    color: #f2a438;
+    color: #d54118;
 }
 
 #navmenu ul li a:hover {
-    background: grey;
+    color: #f2a438;
+}
+
+a:hover {
+    color: #f2a438;
 }
 
 .blog-main {
@@ -229,14 +232,14 @@ hr {
 }
 
 .lirePlus {
-    background-color: #f2a438;
+    background-color: #d54118;
     color: #2d2d2d;
     padding: 2px;
 }
 
 .marge_acc {
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .widgetsB {
@@ -261,7 +264,7 @@ hr {
 }
 
 .couleur {
-    background-color: #f2a438;
+    background-color: #5875b2;
     padding: 10px;
 }
 
@@ -277,8 +280,8 @@ hr {
 
 .blog-post {
     margin-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .blog-post-title {
@@ -299,6 +302,10 @@ hr {
     margin-bottom: 20px;
     color: #2c2c2c;
     font-size: 0.8em;
+}
+
+.blog-post-meta a:hover {
+    color: #f2a438;
 }
 
 .wp-block-latest-posts__post-date {
