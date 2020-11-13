@@ -1,10 +1,10 @@
-#Numerica#
+# Numerica
 
 
-##Thème WordPress simple et léger.##
+## Thème WordPress simple et léger.
 
 
-Numerica est un thème WordPress qui se veut léger (éco-conception) et simple d'utilisation.
+*Numerica* est un thème WordPress qui se veut léger (éco-conception) et simple d'utilisation.
 Il dispose des principaux outils de personnalisation.
 
 
