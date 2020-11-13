@@ -15,18 +15,6 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
     font-weight: normal;
 }
 
-@font-face {
-    font-family: Ubuntu-Light;
-    src: url(../fonts/Ubuntu-Light.ttf);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Ubuntu-Bold;
-    src: url(../fonts/Ubuntu-bold.ttf);
-    font-weight: normal;
-}
-
 .contact {
     width: 100%;
     height: auto;
@@ -204,6 +192,10 @@ hr {
     color: #fff;
     font: bold 12px;
     padding: 6px 6px 6px 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
 }
 
 .presentationArt2 {

@@ -15,16 +15,14 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // scripts et CSS, bootstrap
 function style_enqueue_scripts() {
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.5.1.min.js' );
-    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.js' );
-    wp_enqueue_script( 'bootstrap-bundle', get_template_directory_uri() . '/bootstrap/js/bootstrap.bundle.js' );
-    wp_enqueue_script('popper', 'https://unpkg.com/@popperjs/core@2', array('jquery'), 1, true);
+    wp_enqueue_script( 'bootstrap-bundle', get_template_directory_uri() . '/bootstrap/js/bootstrap.bundle.min.js' );
   }
   add_action( 'wp_enqueue_scripts', 'style_enqueue_scripts');
 
 
 
 function style_scripts() {
-    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.css' );
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
     wp_enqueue_style( 'site', get_template_directory_uri() . '/style.css' );
   }
   add_action( 'wp_enqueue_scripts', 'style_scripts');
