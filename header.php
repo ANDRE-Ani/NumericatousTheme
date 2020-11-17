@@ -18,7 +18,7 @@
 			
 				
 					<?php
-					echo get_theme_mod("contact_code");
+					echo get_theme_mod('contact_code');
 					?>
 				
 		</div>

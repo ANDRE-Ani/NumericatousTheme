@@ -4,7 +4,17 @@
 remove_action('wp_head', 'wp_generator');
 
 // textdomain pour les traductions
-load_theme_textdomain( 'numerica', get_template_directory() . '/lang' );
+// load_theme_textdomain( 'numerica', get_template_directory() . '/lang' );
+
+
+
+function numerica_load_theme_textdomain() {
+  load_theme_textdomain( 'numerica', get_template_directory() . '/lang' );
+}
+add_action( 'after_setup_theme', 'numerica_load_theme_textdomain' );
+
+
+
 
 
 // lien lire plus après les articles
@@ -95,10 +105,8 @@ function add_Main_Nav()
 
 function numerica_theme_setup() {
   add_theme_support( 'title-tag' );  
-
 }
 add_action( 'after_setup_theme', 'numerica_theme_setup');
-
 
 
 add_theme_support( 'automatic-feed-links' );
@@ -185,24 +193,24 @@ add_action('init', 'add_Main_Nav');
 // section contact
 function contact_customize_register($wp_customize) 
 {
-	$wp_customize->add_section("contact", array(
-		"title" => __("Section contact", "customizer_contact_sections"),
-		"priority" => 30,
+	$wp_customize->add_section('contact', array(
+		'title' => __( 'Section contact', 'numerica' ),
+		'priority' => 30,
     ));
     
-    $wp_customize->add_setting("contact_code", array(
-		"default" => "Contact",
-		"transport" => "postMessage",
+    $wp_customize->add_setting('contact_code', array(
+		'default' => 'Contact',
+		'transport' => 'postMessage',
     ));
     
     $wp_customize->add_control(new WP_Customize_Control(
 		$wp_customize,
-		"contact_code",
+		'contact_code',
 		array(
-			"label" => __("Entrez votre texte", "customizer_contact_code_label"),
-			"section" => "contact",
-			"settings" => "contact_code",
-			"type" => "textarea",
+			'label' => __( 'Entrez le texte de la section contact', 'numerica' ),
+			'section' => 'contact',
+			'settings' => 'contact_code',
+			'type' => 'textarea',
 		)
     ));
     
@@ -237,7 +245,7 @@ function sitepoint_customize_register($wp_customize)
 		$wp_customize,
 		"acc_code",
 		array(
-			"label" => __(_e('Entrez le texte de l\'accroche', 'numerica'), "customizer_acc_code_label"),
+			"label" => __('Entrez le texte de l\'accroche', 'numerica', "customizer_acc_code_label"),
 			"section" => "acc",
 			"settings" => "acc_code",
 			"type" => "textarea",
@@ -273,7 +281,7 @@ function head1_customize_register($wp_customize)
 		$wp_customize,
 		"head1_code",
 		array(
-			"label" => __(_e('Entrez le texte du header 1', 'numerica'), "customizer_head1_code_label"),
+			"label" => __('Entrez le texte du header 1', 'numerica', "customizer_head1_code_label"),
 			"section" => "head1",
 			"settings" => "head1_code",
 			"type" => "textarea",
@@ -309,7 +317,7 @@ function head2_customize_register($wp_customize)
 		$wp_customize,
 		"head2_code",
 		array(
-			"label" => __(_e('Entrez le texte du header 2', 'numerica'), "customizer_head2_code_label"),
+			"label" => __('Entrez le texte du header 2', 'numerica', "customizer_head2_code_label"),
 			"section" => "head2",
 			"settings" => "head2_code",
 			"type" => "textarea",
@@ -346,7 +354,7 @@ function head3_customize_register($wp_customize)
 		$wp_customize,
 		"head3_code",
 		array(
-			"label" => __(_e('Entrez le texte du header 3', 'numerica'), "customizer_head3_code_label"),
+			"label" => __('Entrez le texte du header 3', 'numerica', "customizer_head3_code_label"),
 			"section" => "head3",
 			"settings" => "head3_code",
 			"type" => "textarea",
@@ -383,7 +391,7 @@ function reco_customize_register($wp_customize)
 		$wp_customize,
 		"reco_code",
 		array(
-			"label" => __(_e('Entrez le texte section recommandation', 'numerica'),"customizer_reco_code_label"),
+			"label" => __('Entrez le texte section recommandation', 'numerica',"customizer_reco_code_label"),
 			"section" => "reco",
 			"settings" => "reco_code",
 			"type" => "textarea",
@@ -420,7 +428,7 @@ function footer_customize_register($wp_customize)
 		$wp_customize,
 		"footer_code",
 		array(
-			"label" => __(_e('Entrez le texte du pied de page', 'numerica'), "customizer_footer_code_label"),
+			"label" => __('Entrez le texte du pied de page', 'numerica', "customizer_footer_code_label"),
 			"section" => "footer",
 			"settings" => "footer_code",
 			"type" => "textarea",

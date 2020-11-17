@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: numerica\n"
-"POT-Creation-Date: 2020-11-17 11:43+0100\n"
-"PO-Revision-Date: 2020-11-17 11:43+0100\n"
+"POT-Creation-Date: 2020-11-17 15:00+0100\n"
+"PO-Revision-Date: 2020-11-17 15:00+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -43,26 +43,30 @@ msgstr "Theme"
 msgid "Par"
 msgstr "By"
 
-#: functions.php:240
+#: functions.php:200
+msgid "Entrez le texte de la section contact"
+msgstr "Enter the text for the contact section"
+
+#: functions.php:238
 msgid "Entrez le texte de l'accroche"
 msgstr "Enter text for the hook"
 
-#: functions.php:276
+#: functions.php:274
 msgid "Entrez le texte du header 1"
 msgstr "Enter text for the header 1"
 
-#: functions.php:312
+#: functions.php:310
 msgid "Entrez le texte du header 2"
 msgstr "Enter text for the header 2"
 
-#: functions.php:349
+#: functions.php:347
 msgid "Entrez le texte du header 3"
 msgstr "Enter the text for the header 3"
 
-#: functions.php:386
+#: functions.php:384
 msgid "Entrez le texte section recommandation"
 msgstr "Enter the txt for the recommandation section"
 
-#: functions.php:423
+#: functions.php:421
 msgid "Entrez le texte du pied de page"
 msgstr "Enter the text of the footer"

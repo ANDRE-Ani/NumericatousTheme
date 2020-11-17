@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: numerica\n"
-"POT-Creation-Date: 2020-11-17 11:39+0100\n"
-"PO-Revision-Date: 2020-11-17 11:44+0100\n"
+"POT-Creation-Date: 2020-11-17 16:47+0100\n"
+"PO-Revision-Date: 2020-11-17 16:47+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -32,29 +32,26 @@ msgstr "Thème"
 msgid "Par"
 msgstr "Par"
 
-#: functions.php:240
-msgid "Entrez le texte de l'accroche"
-msgstr "Entrez le texte de l'accroche"
+#~ msgid "Entrez le texte de la section contact"
+#~ msgstr "Entrez le texte de la section contact"
 
-#: functions.php:276
-msgid "Entrez le texte du header 1"
-msgstr "Entrez le texte du header 1"
+#~ msgid "Entrez le texte de l'accroche"
+#~ msgstr "Entrez le texte de l'accroche"
 
-#: functions.php:312
-msgid "Entrez le texte du header 2"
-msgstr "Entrez le texte du header 2"
+#~ msgid "Entrez le texte du header 1"
+#~ msgstr "Entrez le texte du header 1"
 
-#: functions.php:349
-msgid "Entrez le texte du header 3"
-msgstr "Entrez le texte du header 3"
+#~ msgid "Entrez le texte du header 2"
+#~ msgstr "Entrez le texte du header 2"
 
-#: functions.php:386
-msgid "Entrez le texte section recommandation"
-msgstr "Entrez le texte section recommandation"
+#~ msgid "Entrez le texte du header 3"
+#~ msgstr "Entrez le texte du header 3"
 
-#: functions.php:423
-msgid "Entrez le texte du pied de page"
-msgstr "Entrez le texte du pied de page"
+#~ msgid "Entrez le texte section recommandation"
+#~ msgstr "Entrez le texte section recommandation"
+
+#~ msgid "Entrez le texte du pied de page"
+#~ msgstr "Entrez le texte du pied de page"
 
 #~ msgid "Entrez votre texte"
 #~ msgstr "Enter your text"
