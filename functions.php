@@ -3,6 +3,9 @@
 // ne pas montrer la version de Wordpress
 remove_action('wp_head', 'wp_generator');
 
+// textdomain pour les traductions
+load_theme_textdomain( 'numerica', get_template_directory() . '/lang' );
+
 
 // lien lire plus après les articles
 function new_excerpt_more($more) {
@@ -90,13 +93,15 @@ function add_Main_Nav()
 }
 
 
-add_theme_support('title-tag');
+function numerica_theme_setup() {
+  add_theme_support( 'title-tag' );  
+
+}
+add_action( 'after_setup_theme', 'numerica_theme_setup');
+
 
 
 add_theme_support( 'automatic-feed-links' );
-
-
-add_theme_support( 'title-tag' );
 
 
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'chat', 'image', 'link', 'quote', 'video', 'audio'));
@@ -232,7 +237,7 @@ function sitepoint_customize_register($wp_customize)
 		$wp_customize,
 		"acc_code",
 		array(
-			"label" => __("Entrez votre texte", "customizer_acc_code_label"),
+			"label" => __(_e('Entrez le texte de l\'accroche', 'numerica'), "customizer_acc_code_label"),
 			"section" => "acc",
 			"settings" => "acc_code",
 			"type" => "textarea",
@@ -268,7 +273,7 @@ function head1_customize_register($wp_customize)
 		$wp_customize,
 		"head1_code",
 		array(
-			"label" => __("Entrez votre texte", "customizer_head1_code_label"),
+			"label" => __(_e('Entrez le texte du header 1', 'numerica'), "customizer_head1_code_label"),
 			"section" => "head1",
 			"settings" => "head1_code",
 			"type" => "textarea",
@@ -304,7 +309,7 @@ function head2_customize_register($wp_customize)
 		$wp_customize,
 		"head2_code",
 		array(
-			"label" => __("Entrez votre texte", "customizer_head2_code_label"),
+			"label" => __(_e('Entrez le texte du header 2', 'numerica'), "customizer_head2_code_label"),
 			"section" => "head2",
 			"settings" => "head2_code",
 			"type" => "textarea",
@@ -341,7 +346,7 @@ function head3_customize_register($wp_customize)
 		$wp_customize,
 		"head3_code",
 		array(
-			"label" => __("Entrez votre texte", "customizer_head3_code_label"),
+			"label" => __(_e('Entrez le texte du header 3', 'numerica'), "customizer_head3_code_label"),
 			"section" => "head3",
 			"settings" => "head3_code",
 			"type" => "textarea",
@@ -378,7 +383,7 @@ function reco_customize_register($wp_customize)
 		$wp_customize,
 		"reco_code",
 		array(
-			"label" => __("Entrez votre texte", "customizer_reco_code_label"),
+			"label" => __(_e('Entrez le texte section recommandation', 'numerica'),"customizer_reco_code_label"),
 			"section" => "reco",
 			"settings" => "reco_code",
 			"type" => "textarea",
@@ -397,6 +402,41 @@ function reco_customizer_live_preview()
 add_action("customize_preview_init", "reco_customizer_live_preview");
 
 
+
+// section footer
+function footer_customize_register($wp_customize) 
+{
+	$wp_customize->add_section("footer", array(
+		"title" => __("Section footer", "customizer_footer_sections"),
+		"priority" => 30,
+    ));
+    
+    $wp_customize->add_setting("footer_code", array(
+		"default" => "Footer",
+		"transport" => "postMessage",
+    ));
+    
+    $wp_customize->add_control(new WP_Customize_Control(
+		$wp_customize,
+		"footer_code",
+		array(
+			"label" => __(_e('Entrez le texte du pied de page', 'numerica'), "customizer_footer_code_label"),
+			"section" => "footer",
+			"settings" => "footer_code",
+			"type" => "textarea",
+		)
+    ));
+    
+}
+
+add_action("customize_register","footer_customize_register");
+
+function footer_customizer_live_preview()
+{
+	wp_enqueue_script("footer-themecustomizer", get_template_directory_uri() . "/theme-customizer.js", array("jquery", "customize-preview"), '',  true);
+}
+
+add_action("customize_preview_init", "footer_customizer_live_preview");
 
 
 /**

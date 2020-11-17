@@ -36,38 +36,36 @@
     </div>
 
 
-
     <div class="container-fluid footer-text footer1">
         <div class="row">
-            
-                <div class="col-sm-4">
-                    <p class="textF">Fièrement propulsé par <a href="https://fr.wordpress.org/" target="_blank" title="Site de Wordpress">Wordpress</a>
-                    </p>
 
-                    <p>&#x1f12f; -
-                        <?php echo date('Y'); ?>
-                        - Thème : <a href="https://gitlab.com/andre0ani/andreaniswptheme" target="_blank" title="Dépôt Gitlab"><?php
-                                                                                                                                $my_theme = wp_get_theme();
-                                                                                                                                echo $my_theme->get('Name');
-                                                                                                                                ?></a>
+            <div class="col-sm-4">
 
-                        Par : <a href="https://andre-ani.fr" target="_blank" title="Site de l'auteur du thème"><?php
-                                                                                                                $my_theme = wp_get_theme();
-                                                                                                                echo $my_theme->get('Author');
-                                                                                                                ?></a>
-                    </p>
-                </div>
+                <p class="textF"><?php echo _e('Fièrement propulsé par', 'numerica') ?> <a href="https://fr.wordpress.org/" target="_blank" title="Site de Wordpress">Wordpress</a>
+                </p>
+
+                <p>&#x1f12f; -
+                    <?php echo date_i18n('Y'); ?>
+                    - <?php echo _e('Thème', 'numerica'); ?> : <a href="https://github.com/ANDRE-Ani/NumericatousTheme" target="_blank" title="Dépôt Github"><?php
+                                                                                                                                                $my_theme = wp_get_theme();
+                                                                                                                                                echo $my_theme->get('Name');
+                                                                                                                                                ?></a>
+
+                    <?php echo _e('Par', 'numerica') ?> : <a href="https://numericatous.fr" target="_blank" title="Site de l'auteur du thème"><?php
+                                                                                                                                    $my_theme = wp_get_theme();
+                                                                                                                                    echo $my_theme->get('Author');                                                                                                         ?></a>
+                </p>
+            </div>
 
 
+            <div class="col-sm-8">
+                <p>
+                    <?php
+                    echo get_theme_mod("footer_code");
+                    ?>
+                </p>
+            </div>
 
-                <div class="col-sm-8">
-                    <p>
-                        Numericatous, Entrez dans le numérique avec les bons outils
-                        2020 - Numericatous.fr - Patrice ANDREANI - Auto-entrepreneur - SIREN 753 453 711 - 18000 Bourges
-                        https://numericatous.fr - contact@numericatous.fr
-                    </p>
-                </div>
-            
         </div>
     </div>
 

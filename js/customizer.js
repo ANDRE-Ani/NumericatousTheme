@@ -46,3 +46,13 @@
         });
     });
 })(jQuery);
+
+
+//section footer
+(function($) {
+    wp.customize("footer_text", function(value) {
+        value.bind(function(newval) {
+            $("#footer_text").html(newval);
+        });
+    });
+})(jQuery);
