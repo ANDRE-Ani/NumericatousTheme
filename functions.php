@@ -4,14 +4,30 @@
 remove_action('wp_head', 'wp_generator');
 
 // textdomain pour les traductions
-// load_theme_textdomain( 'numerica', get_template_directory() . '/lang' );
-
-
-
 function numerica_load_theme_textdomain() {
   load_theme_textdomain( 'numerica', get_template_directory() . '/lang' );
 }
 add_action( 'after_setup_theme', 'numerica_load_theme_textdomain' );
+
+
+// enlever le champ URL des commentaires
+function wpadmin_remove_comment_url($arg) {
+  $arg['url'] = '';
+  return $arg;
+}
+add_filter('comment_form_default_fields', 'wpadmin_remove_comment_url');
+
+
+// modifie l'ordre des champs du formulaire de commentaire
+function wpb_move_comment_field_to_bottom( $fields ) {
+$comment_field = $fields['comment'];
+unset( $fields['comment'] );
+$fields['comment'] = $comment_field;
+return $fields;
+}
+  
+add_filter( 'comment_form_fields', 'wpb_move_comment_field_to_bottom'); 
+
 
 
 
