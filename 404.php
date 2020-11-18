@@ -6,16 +6,14 @@
 
 
             <p id='error'>
-                <strong>Arf... Il semble y avoir une erreur...</strong>
+                <strong><?php _e('Oups... Il semble y avoir une erreur...') ?></strong>
                 <br>
                 <br>
                 <?php
-                $website = get_bloginfo('url');
-                $uri = $_SERVER['REQUEST_URI'];
-                echo 'La page demandée : ' . $uri . ' sur le site : ' . $website . ' n\'a pas été trouvée...' . '<br>';
+                echo _e('La page demandée n\'a pas été trouvée.') . '<br>';
                 ?>
                 <br>
-                Revenez donc à l'<a href='https://andre-ani.fr' title='Page d\'accueil du Site d\'ANDRE Ani'> accueil</a> ;-)
+                <?php _e('Retour') ?> <a href='<?php echo get_bloginfo('wpurl'); ?>' title='Accueil du Site'> <?php _e('accueil') ?></a> ;-)
             </p>
 
         </div>

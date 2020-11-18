@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: numerica\n"
-"POT-Creation-Date: 2020-11-17 16:47+0100\n"
-"PO-Revision-Date: 2020-11-17 16:47+0100\n"
+"POT-Creation-Date: 2020-11-18 11:35+0100\n"
+"PO-Revision-Date: 2020-11-18 11:43+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -12,13 +12,46 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Poedit-KeywordsList: _e\n"
+"X-Poedit-KeywordsList: _e;__;_nx;esc_html_e;esc_html;esc_html__\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: footer.php\n"
 "X-Poedit-SearchPath-1: functions.php\n"
 "X-Poedit-SearchPath-2: header.php\n"
 "X-Poedit-SearchPath-3: index.php\n"
 "X-Poedit-SearchPath-4: page.php\n"
 "X-Poedit-SearchPath-5: page-single.php\n"
+"X-Poedit-SearchPath-6: 404.php\n"
+"X-Poedit-SearchPath-7: comments.php\n"
+
+#: 404.php:9
+msgid "Oups... Il semble y avoir une erreur..."
+msgstr "Oups... Il semble y avoir une erreur..."
+
+#: 404.php:13
+msgid "La page demandée n'a pas été trouvée."
+msgstr "La page demandée n'a pas été trouvée."
+
+#: 404.php:16
+msgid "Retour"
+msgstr "Retour"
+
+#: 404.php:16
+msgid "accueil"
+msgstr "accueil"
+
+#: comments.php:20
+#, php-format
+msgid "Un commentaire sur &ldquo;%1$s&rdquo;"
+msgstr "Un commentaire sur &ldquo;%1$s&rdquo;"
+
+#: comments.php:26
+#, php-format
+msgid "%1$s commentaires sur &ldquo;%2$s&rdquo;"
+msgstr "%1$s commentaires sur &ldquo;%2$s&rdquo;"
+
+#: comments.php:52
+msgid "Les commentaires sont fermés."
+msgstr "Les commentaires sont fermés."
 
 #: footer.php:44
 msgid "Fièrement propulsé par"
@@ -32,26 +65,65 @@ msgstr "Thème"
 msgid "Par"
 msgstr "Par"
 
-#~ msgid "Entrez le texte de la section contact"
-#~ msgstr "Entrez le texte de la section contact"
+#: functions.php:100
+msgid "Menu titre"
+msgstr "Menu titre"
 
-#~ msgid "Entrez le texte de l'accroche"
-#~ msgstr "Entrez le texte de l'accroche"
+#: functions.php:197
+msgid "Section contact"
+msgstr "Section contact"
 
-#~ msgid "Entrez le texte du header 1"
-#~ msgstr "Entrez le texte du header 1"
+#: functions.php:210
+msgid "Entrez le texte de la section contact"
+msgstr "Entrez le texte de la section contact"
 
-#~ msgid "Entrez le texte du header 2"
-#~ msgstr "Entrez le texte du header 2"
+#: functions.php:235
+msgid "Section accroche"
+msgstr "Section accroche"
 
-#~ msgid "Entrez le texte du header 3"
-#~ msgstr "Entrez le texte du header 3"
+#: functions.php:248
+msgid "Entrez le texte de l'accroche"
+msgstr "Entrez le texte de l'accroche"
 
-#~ msgid "Entrez le texte section recommandation"
-#~ msgstr "Entrez le texte section recommandation"
+#: functions.php:271
+msgid "Section head1"
+msgstr "Section head1"
 
-#~ msgid "Entrez le texte du pied de page"
-#~ msgstr "Entrez le texte du pied de page"
+#: functions.php:284
+msgid "Entrez le texte du header 1"
+msgstr "Entrez le texte du header 1"
+
+#: functions.php:307
+msgid "Section head2"
+msgstr "Section head2"
+
+#: functions.php:320
+msgid "Entrez le texte du header 2"
+msgstr "Entrez le texte du header 2"
+
+#: functions.php:344
+msgid "Section head3"
+msgstr "Section head3"
+
+#: functions.php:357
+msgid "Entrez le texte du header 3"
+msgstr "Entrez le texte du header 3"
+
+#: functions.php:381
+msgid "Section recommandation"
+msgstr "Section recommandation"
+
+#: functions.php:394
+msgid "Entrez le texte section recommandation"
+msgstr "Entrez le texte section recommandation"
+
+#: functions.php:418
+msgid "Section footer"
+msgstr "Section footer"
+
+#: functions.php:431
+msgid "Entrez le texte du pied de page"
+msgstr "Entrez le texte du pied de page"
 
 #~ msgid "Entrez votre texte"
 #~ msgstr "Enter your text"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: numerica\n"
-"POT-Creation-Date: 2020-11-17 15:00+0100\n"
-"PO-Revision-Date: 2020-11-17 15:00+0100\n"
+"POT-Creation-Date: 2020-11-18 11:48+0100\n"
+"PO-Revision-Date: 2020-11-18 11:48+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -12,24 +12,54 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: _e\n"
-"X-Poedit-SearchPath-0: 404.php\n"
-"X-Poedit-SearchPath-1: comments.php\n"
-"X-Poedit-SearchPath-2: content.php\n"
-"X-Poedit-SearchPath-3: content-single.php\n"
-"X-Poedit-SearchPath-4: footer.php\n"
-"X-Poedit-SearchPath-5: functions.php\n"
-"X-Poedit-SearchPath-6: header.php\n"
-"X-Poedit-SearchPath-7: index.php\n"
-"X-Poedit-SearchPath-8: page.php\n"
-"X-Poedit-SearchPath-9: page-single.php\n"
-"X-Poedit-SearchPath-10: screenshot.png\n"
-"X-Poedit-SearchPath-11: sidebar.php\n"
-"X-Poedit-SearchPath-12: single.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _e;__;_nx;esc_html;esc_html_e;esc_html__\n"
+"X-Poedit-SearchPath-0: comments.php\n"
+"X-Poedit-SearchPath-1: content.php\n"
+"X-Poedit-SearchPath-2: content-single.php\n"
+"X-Poedit-SearchPath-3: footer.php\n"
+"X-Poedit-SearchPath-4: functions.php\n"
+"X-Poedit-SearchPath-5: header.php\n"
+"X-Poedit-SearchPath-6: index.php\n"
+"X-Poedit-SearchPath-7: page.php\n"
+"X-Poedit-SearchPath-8: page-single.php\n"
+"X-Poedit-SearchPath-9: sidebar.php\n"
+"X-Poedit-SearchPath-10: single.php\n"
+"X-Poedit-SearchPath-11: 404.php\n"
 
-#: comments.php:31
+#: 404.php:9
+msgid "Oups... Il semble y avoir une erreur..."
+msgstr "Oups... It's seems there an error..."
+
+#: 404.php:13
+msgid "La page demandée n'a pas été trouvée."
+msgstr "The page is not found."
+
+#: 404.php:16
+msgid "Retour"
+msgstr "Back"
+
+#: 404.php:16
+msgid "accueil"
+msgstr "home"
+
+#: comments.php:20
+#, php-format
+msgid "Un commentaire sur &ldquo;%1$s&rdquo;"
+msgstr "One comment on &ldquo;%1$s&rdquo;"
+
+#: comments.php:26
+#, php-format
+msgid "%1$s commentaires sur &ldquo;%2$s&rdquo;"
+msgstr "%1$s comments on &ldquo;%2$s&rdquo;"
+
+#: comments.php:52
 msgid "Les commentaires sont fermés."
 msgstr "Comments are closed."
+
+#: content.php:32
+msgid "Un commentaire"
+msgstr "One comment"
 
 #: footer.php:44
 msgid "Fièrement propulsé par"
@@ -43,30 +73,62 @@ msgstr "Theme"
 msgid "Par"
 msgstr "By"
 
-#: functions.php:200
+#: functions.php:100
+msgid "Menu titre"
+msgstr "Title menu"
+
+#: functions.php:197
+msgid "Section contact"
+msgstr "Contact section"
+
+#: functions.php:210
 msgid "Entrez le texte de la section contact"
-msgstr "Enter the text for the contact section"
+msgstr "Enter text for contact section"
 
-#: functions.php:238
+#: functions.php:235
+msgid "Section accroche"
+msgstr "Hook section"
+
+#: functions.php:248
 msgid "Entrez le texte de l'accroche"
-msgstr "Enter text for the hook"
+msgstr "Enter text for hook section"
 
-#: functions.php:274
+#: functions.php:271
+msgid "Section head1"
+msgstr "Section head1"
+
+#: functions.php:284
 msgid "Entrez le texte du header 1"
-msgstr "Enter text for the header 1"
+msgstr "Enter text for section head1"
 
-#: functions.php:310
+#: functions.php:307
+msgid "Section head2"
+msgstr "Section head2"
+
+#: functions.php:320
 msgid "Entrez le texte du header 2"
-msgstr "Enter text for the header 2"
+msgstr "Enter text for section head2"
 
-#: functions.php:347
+#: functions.php:344
+msgid "Section head3"
+msgstr "Section head3"
+
+#: functions.php:357
 msgid "Entrez le texte du header 3"
-msgstr "Enter the text for the header 3"
+msgstr "Enter text for section head3"
 
-#: functions.php:384
+#: functions.php:381
+msgid "Section recommandation"
+msgstr "Recommendation section"
+
+#: functions.php:394
 msgid "Entrez le texte section recommandation"
-msgstr "Enter the txt for the recommandation section"
+msgstr "Enter text for recommendation section"
 
-#: functions.php:421
+#: functions.php:418
+msgid "Section footer"
+msgstr "Footer section"
+
+#: functions.php:431
 msgid "Entrez le texte du pied de page"
-msgstr "Enter the text of the footer"
+msgstr "Enter text for the footer section"
