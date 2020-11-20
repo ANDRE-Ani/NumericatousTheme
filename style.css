@@ -1,22 +1,11 @@
-/*
-Theme Name: Numerica
-Author: Numericatous
-Author URI: https://numericatous.fr
-Description: Thème simple et léger pour WordPress
-Version: 1.5
-Text Domain: numerica
-License: GNU General Public License v3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-*/
-
 @font-face {
     font-family: Ubuntu-Regular;
     src: url(./fonts/Ubuntu-Regular.ttf);
-    font-weight: normal;
+    font-weight: 400
 }
 
 .side {
-    padding-right: 25px;
+    padding-right: 25px
 }
 
 .contact {
@@ -24,40 +13,32 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
     height: auto;
     color: #d54118;
     background-color: #131719;
-    padding: 10px;
+    padding: 10px
 }
 
 .logo {
     width: 100%;
-    text-align: center;
-}
-
-#adminmenuwrap {
-    margin-top: 0px;
-}
-
-#adminmenuback {
-    margin-top: 0px;
+    text-align: center
 }
 
 .menu-nav {
     margin-top: 15px;
-    padding-right: 23px;
+    padding-right: 23px
 }
 
 .footer-text {
-    text-align: left;
+    text-align: left
 }
 
 #accroche .widget_text {
     background-color: #1ccdca;
     border: none;
-    color: white;
+    color: #fff
 }
 
 body {
     font-family: 'Ubuntu-Regular', "Times New Roman", Times, serif;
-    color: #626262;
+    color: #626262
 }
 
 h1,
@@ -74,31 +55,25 @@ h6,
 .h6 {
     margin-top: 0;
     font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    color: #333;
+    font-weight: 400;
+    color: #333
 }
 
 i {
-    color: #d54118;
+    color: #d54118
 }
 
 img {
     height: auto;
-    max-width: 100%;
+    max-width: 100%
 }
 
 h5 {
-    color: #3d3d3d;
+    color: #3d3d3d
 }
 
 hr {
-    background-color: #f2a438;
-}
-
-.comments1 {
-    background-color: #f3f3f3;
-    margin: 15px;
-    padding: 15px;
+    background-color: #f2a438
 }
 
 #error {
@@ -106,12 +81,12 @@ hr {
     padding: 20px;
     border-radius: 45px;
     height: 210px;
-    margin-top: 15px;
+    margin-top: 15px
 }
 
-@media (min-width: 1200px) {
+@media (min-width:1200px) {
     .container {
-        width: 970px;
+        width: 970px
     }
 }
 
@@ -119,72 +94,72 @@ hr {
     padding-top: 10px;
     padding-bottom: 10px;
     font-style: italic;
-    margin-left: 10px;
+    margin-left: 10px
 }
 
 .blog-title {
     margin-top: 15px;
     margin-bottom: 0;
     font-size: 50px;
-    font-weight: normal;
+    font-weight: 400
 }
 
 .blog-title a {
-    color: #d54118;
+    color: #d54118
 }
 
 .blog-description {
     font-size: 20px;
-    color: #999;
+    color: #999
 }
 
 #navmenu {
     top: 0;
     margin: 4px;
     margin-right: 35px;
-    padding: 5px 20px 5px 20px;
-    display: inline;
+    padding: 5px 20px;
+    display: inline
 }
 
 #navmenu ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    list-style-image: none;
+    list-style-image: none
 }
 
 #navmenu li {
-    display: inline;
+    display: inline
 }
 
 #navmenu ul li a {
     text-decoration: none;
     margin: 4px;
-    padding: 5px 20px 5px 20px;
-    color: #d54118;
+    padding: 5px 20px;
+    color: #d54118
 }
 
 #navmenu ul li a:hover {
-    color: #f2a438;
+    color: #f2a438
 }
 
 a:hover {
-    color: #f2a438;
+    color: #f2a438
 }
 
 .blog-main {
     font-size: 18px;
     line-height: 1.5;
     padding-left: 25px;
-    padding-right: 5px;
+    padding-right: 5px
 }
 
 .icon {
-    color: #d54118;
+    color: #d54118
 }
 
 .service_box {
-    text-align: center;
+    text-align: center
 }
 
 .bouton6 {
@@ -193,17 +168,17 @@ a:hover {
     border: none;
     color: #fff;
     font: bold 12px;
-    padding: 6px 6px 6px 6px;
+    padding: 6px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
+    margin-top: 10px
 }
 
 .bouton6:focus {
     outline: 1px dotted;
     outline: 5px auto -webkit-focus-ring-color;
-    color: #f2a438;
+    color: #f2a438
 }
 
 .presentationArt2 {
@@ -216,7 +191,7 @@ a:hover {
     border-right: 3px solid #f2a438;
     border-style: inset;
     margin-top: 2px;
-    margin-bottom: 15px;
+    margin-bottom: 15px
 }
 
 .presentationArt {
@@ -229,22 +204,22 @@ a:hover {
     padding: 10px;
     border-style: inset;
     text-align: left;
-    height: auto;
+    height: auto
 }
 
 .presentationArt a {
-    color: #2d2d2d;
+    color: #2d2d2d
 }
 
 .lirePlus {
     background-color: #d54118;
     color: #2d2d2d;
-    padding: 2px;
+    padding: 2px
 }
 
 .marge_acc {
     padding-left: 35px;
-    padding-right: 35px;
+    padding-right: 35px
 }
 
 .widgetsB {
@@ -257,196 +232,138 @@ a:hover {
     padding: 25px;
     border-style: inset;
     text-align: left;
-    height: auto;
+    height: auto
 }
 
 .widgetsB h2 {
-    color: #626262;
+    color: #626262
 }
 
 .page {
-    margin: auto;
+    margin: auto
 }
 
 .couleur {
     background-color: #5875b2;
-    padding: 10px;
+    padding: 10px
 }
 
 .soutient {
     padding: 10px;
     font-size: 1.3em;
-    color: #171717;
+    color: #171717
 }
 
 .title-article {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.3em;
-    padding-left: 20px;
+    padding-left: 20px
 }
 
 .blog-post {
     margin-bottom: 10px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px
 }
 
 .blog-post-title {
     margin-bottom: 5px;
     font-size: 35px;
-    font-style: italic;
+    font-style: italic
 }
 
 .blog-post-title a {
-    color: #5e5e5e;
+    color: #5e5e5e
 }
 
 .blog-post-meta a {
-    color: #2c2c2c;
+    color: #2c2c2c
 }
 
 .blog-post-meta {
     margin-bottom: 20px;
     color: #2c2c2c;
-    font-size: 0.8em;
+    font-size: .8em
 }
 
 .blog-post-meta a:hover {
-    color: #f2a438;
+    color: #f2a438
 }
 
 .wp-block-latest-posts__post-date {
-    color: #424242;
+    color: #424242
 }
 
 .footer1 {
     padding: 20px;
     background-color: #131719;
-    color: #f2a438;
+    color: #f2a438
 }
 
 .footer2 {
-    background-color: #191e21;
+    background-color: #191e21
 }
 
 .slogan {
-    color: #f2a438;
+    color: #f2a438
 }
 
 a {
-    color: #d54118;
+    color: #d54118
 }
 
 #comment {
-    max-width: 90%;
+    max-width: 90%
 }
 
 textarea:focus {
     box-shadow: 0 0 5px #3584e4;
-    margin: 5px 1px 3px 0px;
-    border: 1px solid #3584e4;
-}
-
-
-/* formulaire commentaires */
-
-.comment-reply-link:focus {
-    box-shadow: 0 0 5px #3584e4;
-    margin: 5px 1px 3px 0px;
-    border: 1px solid #3584e4;
-}
-
-.comment-respond,
-.entry-pings,
-.entry-comments {
-    color: #444;
-    padding: 20px 45px 40px 45px;
-    border: 1px solid #ccc;
-    overflow: hidden;
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    border-left: 4px solid #444;
+    margin: 5px 1px 3px 0;
+    border: 1px solid #3584e4
 }
 
 .entry-comments h3 {
     font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.comment-respond h3,
-.entry-pings h3 {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.comment-respond {
-    padding-bottom: 5%;
-    margin: 20px 1px 20px 1px;
-    border-left: none !important;
-}
-
-.comment-header {
-    color: #adaeb3;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.comment-header cite a {
-    border: none;
-    font-style: normal;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.comment-header .comment-meta a {
-    border: none;
-    color: #adaeb3;
+    margin-bottom: 30px
 }
 
 li.comment {
     background-color: #fff;
-    border-right: none;
-}
-
-.comment-content {
-    clear: both;
-    overflow: hidden;
+    border-right: none
 }
 
 .comment-list li {
     font-size: 14px;
-    padding: 20px 30px 20px 50px;
+    padding: 20px 30px 20px 50px
 }
 
 .comment-list .children {
     margin-top: 40px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc
 }
 
 .comment-list li li {
-    background-color: #f5f5f6;
+    background-color: #f5f5f6
 }
 
 .comment-list li li li {
-    background-color: #fff;
+    background-color: #fff
 }
 
 .comment-respond input[type="email"],
 .comment-respond input[type="text"],
 .comment-respond input[type="url"] {
-    width: 50%;
+    width: 50%
 }
 
 .comment-respond label {
     display: block;
-    margin-right: 12px;
+    margin-right: 12px
 }
 
 .entry-comments .comment-author {
     margin-bottom: 0;
-    position: relative;
+    position: relative
 }
 
 .entry-comments .comment-author img {
@@ -455,19 +372,19 @@ li.comment {
     left: -80px;
     top: -5px;
     position: absolute;
-    width: 60px;
+    width: 60px
 }
 
 .entry-pings .reply {
-    display: none;
+    display: none
 }
 
-.bypostauthor {}
+.comment-reply-link:hover {
+    color: #fff
+}
 
-.form-allowed-tags {
-    background-color: #f5f5f5;
-    font-size: 16px;
-    padding: 24px;
+.comment-notes {
+    display: none
 }
 
 .comment-reply-link {
@@ -479,15 +396,13 @@ li.comment {
     font-size: 12px;
     font-weight: 300;
     letter-spacing: 1px;
-    padding: 4px 10px 4px;
+    padding: 4px 10px;
     text-transform: uppercase;
-    width: auto;
+    width: auto
 }
 
-.comment-reply-link:hover {
-    color: #fff;
-}
-
-.comment-notes {
-    display: none;
+.comment-reply-link:focus {
+    box-shadow: 0 0 5px #3584e4;
+    margin: 5px 1px 3px 0;
+    border: 1px solid #3584e4
 }
