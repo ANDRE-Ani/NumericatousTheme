@@ -47,14 +47,15 @@
                 <p>&#x1f12f; -
                     <?php echo date_i18n('Y'); ?>
                     - <?php echo _e('Thème', 'numerica'); ?> : <a href="https://github.com/ANDRE-Ani/NumericatousTheme" target="_blank" title="Dépôt Github"><?php
-                                                                                                                                                $my_theme = wp_get_theme();
-                                                                                                                                                echo $my_theme->get('Name');
-                                                                                                                                                ?></a>
+                                                                                                                                            $my_theme = wp_get_theme('numerica');
+                                                                                                                                            echo $my_theme->get('Name');
+                                                                                                                                        ?></a>
 
                     <?php echo _e('Par', 'numerica') ?> : <a href="https://numericatous.fr" target="_blank" title="Site de l'auteur du thème"><?php
-                                                                                                                                    $my_theme = wp_get_theme();
-                                                                                                                                    echo $my_theme->get('Author');                                                                                                         ?></a>
-                </p>
+                                                                                                                                            $theme = wp_get_theme();
+                                                                                                                                            echo $theme->Author;
+                                                                                                                                        ?></a>
+                </p></a>
             </div>
 
 
