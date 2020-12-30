@@ -494,6 +494,5 @@ function disable_emojis() {
  
  return $urls;
  }
- 
 
 ?>

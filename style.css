@@ -427,3 +427,17 @@ li.comment {
     margin: 5px 1px 3px 0;
     border: 1px solid #3584e4
 }
+
+
+
+
+
+.sub-menu {
+left: -999em;
+position: absolute;
+background: #fff;
+}
+
+li:hover > .sub-menu {
+left: auto;
+}
