@@ -192,6 +192,12 @@ a:hover {
     color: #f2a438
 }
 
+.bouton6:hover {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    color: #f2a438
+}
+
 .presentationArt2 {
     padding: 20px;
     width: 100%;
