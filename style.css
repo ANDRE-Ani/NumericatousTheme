@@ -428,9 +428,15 @@ li.comment {
     border: 1px solid #3584e4
 }
 
+/* image produit sur la page boutique */
+.woocommerce ul.products li.product a img {
+    width: auto;
+}
 
-
-
+/* image produit seul */
+.woocommerce-product-gallery__wrapper {
+    width: 200px;
+}
 
 .sub-menu {
 left: -999em;

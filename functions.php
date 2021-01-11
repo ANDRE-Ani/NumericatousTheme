@@ -197,7 +197,19 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails', array( 'page' ) );
     set_post_thumbnail_size( 600, 350 );
 }
-    
+  
+
+
+add_action ('woocommerce_before_main_content', 'numerica_wrapper_start', 10);
+add_action ('woocommerce_after_main_content', 'numerica_wrapper_end', 10);
+
+function numerica_wrapper_start () {
+echo '<section id = "main">';
+}
+
+function numerica_wrapper_end () {
+echo '</ section>';
+}
 
 
 add_action('init', 'add_Main_Nav');
